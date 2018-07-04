@@ -8,3 +8,10 @@ Theme editor
 * Configure theme breakpoints
 * Configure theme fonts
 * Configure theme landing page
+
+## Credits
+
+* SVG patterns https://www.svgbackgrounds.com/
+* Placeholder images https://unsplash.com/
+* Placeholder icons https://flaticon.com/
+
