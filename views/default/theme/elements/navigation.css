@@ -1,0 +1,109 @@
+.elgg-menu {
+	font-family: $(h-font-family);
+}
+
+.elgg-menu-hero > li > a {
+	text-transform: none !important;
+	font-size: 0.9rem !important;
+}
+
+.elgg-menu-filter,
+.elgg-tabs {
+	border-bottom: 1px solid $(border-color-soft);
+	flex-direction: row;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	
+	& > li {
+		background: transparent;
+		border-width: 0 0 1px;
+		border-style: solid;
+		border-color: transparent;
+		margin: 0;
+		top: 0;
+		
+		& > a {
+			background: none;
+			text-transform: uppercase;
+			font-size: 80%;
+			color: #666666;
+			
+			&:hover {
+				background: none;
+			}
+		}
+	}
+	
+	& > .elgg-state-selected,
+	& > li:hover {
+		background: transparent;
+		border-color: $(border-color-highlight);
+		
+		& > a {
+			background: none;
+			color: $(text-color-highlight);
+			
+			&:hover {
+				background: none;
+			}
+		}
+	}
+}
+
+.elgg-menu-page,
+.elgg-menu-owner-block {
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.elgg-menu:not(.elgg-menu-hz) .elgg-badge {
+	min-width: 1.25rem;
+	background-color: $(background-color-highlight);
+	color: #fff;
+}
+
+.elgg-menu-hover {
+	overflow: hidden;
+	border-radius: 6px;
+}
+
+.elgg-menu-page .elgg-menu-item-has-toggle>.elgg-child-menu,
+.elgg-menu-owner-block .elgg-menu-item-has-toggle>.elgg-child-menu {
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.elgg-pagination li > a,
+.elgg-pagination li > span {
+	padding: 0.25rem 0.5rem;
+	min-width: 2rem;
+	display: inline-block;
+}
+
+.elgg-pagination .elgg-state-selected > span {
+	background: $(background-color-highlight);
+	color: #fff;
+	border-radius: 25px;
+}
+
+.elgg-pagination li {
+	border: none;
+}
+
+.elgg-pagination li > a, .elgg-pagination li > span {
+	border-radius: 25px;
+	margin: 0 3px;
+}
+
+.elgg-menu-social .elgg-badge {
+	background: none;
+}
+
+.elgg-module.elgg-page-menu {
+	background: none;
+}
+
+.elgg-module.elgg-page-menu > .elgg-body {
+	padding: 0;
+}

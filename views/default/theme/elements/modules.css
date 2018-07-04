@@ -1,0 +1,20 @@
+.elgg-module {
+	border-radius: 6px;
+	background: #ffffff;
+}
+
+.elgg-module > *:first-child {
+	border-radius: 6px 6px 0 0;
+}
+
+.elgg-module > *:last-child {
+	border-radius: 0 0 6px 6px;
+}
+
+.elgg-module:not(.has-list) > .elgg-body {
+	padding: 1rem;
+}
+
+.elgg-module-aside {
+	border: 1px solid $(border-color-soft);
+}

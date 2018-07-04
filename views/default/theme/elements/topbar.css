@@ -1,0 +1,52 @@
+.elgg-nav-logo img {
+	max-height: 3rem;
+}
+
+.elgg-page-topbar {
+	padding: 0.5rem 0;
+	background-image: $(topbar-gradient);
+}
+
+.elgg-page-topbar .elgg-menu:not(.elgg-child-menu) > li > a {
+	padding: .5rem 1rem;
+	line-height: 1.5rem;
+	vertical-align: middle;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	margin: 1px;
+}
+
+.elgg-page-topbar .elgg-menu li > a:hover,
+.elgg-page-topbar .elgg-menu li.elgg-state-selected > a {
+	background: $(background-color-highlight);
+}
+
+@media $(media-desktop-up) {
+	.elgg-page-topbar .elgg-menu li:hover > .elgg-child-menu {
+		border-radius: 6px;
+		overflow: hidden;
+		top: 0;
+		background-image: $(topbar-gradient);
+	}
+	
+	.elgg-page-topbar .elgg-menu li:hover > .elgg-child-menu:before {
+		content: none;
+	}
+	
+	.elgg-page-topbar .elgg-menu.elgg-child-menu > li > a:hover {
+		background: $(background-color-highlight);
+	}
+}
+
+#login-dropdown-box {
+	padding: 0;
+}
+
+#login-dropdown a {
+	padding: .5rem 1rem;
+	line-height: 1.5rem;
+	vertical-align: middle;
+	border-radius: 2rem;
+	border: 1px solid transparent;
+	margin: 1px;
+}

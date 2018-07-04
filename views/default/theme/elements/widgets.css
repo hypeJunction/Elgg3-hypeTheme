@@ -1,0 +1,31 @@
+
+.elgg-module-widget {
+	box-shadow: none !important;
+}
+
+.elgg-module-widget.elgg-state-draggable:hover {
+	border-color: $(border-color-strong);
+}
+
+.elgg-module-widget:hover .elgg-menu-widget-container {
+	display: inline-block;
+	align-self: center;
+}
+
+.elgg-module.elgg-widget-instance-blog,
+.elgg-module.elgg-widget-instance-discussion,
+.elgg-module.has-list {
+	& > .elgg-body,
+	& > .elgg-foot {
+		padding: 0;
+	}
+	.elgg-widget-more {
+		padding: 0.5rem 1rem;
+		border-top: 1px solid $(border-color-soft);
+		background: $(background-color-soft);
+	}
+}
+
+.elgg-widget-content {
+	padding: 0;
+}

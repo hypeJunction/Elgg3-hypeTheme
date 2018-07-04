@@ -1,0 +1,17 @@
+.interactions {
+	background: #fff;
+	border-radius: 6px;
+}
+
+.elgg-menu-river-filter > li {
+	background: $(body-background-color);
+}
+
+.wall-component .elgg-tabs-component .elgg-tabs {
+	padding: 0 !important;
+}
+
+.wall-component .elgg-tabs-component .elgg-tabs > li > a {
+	padding: 1rem;
+	font-weight: bold;
+}

@@ -1,0 +1,28 @@
+{
+	"name": "theme/hypetheme",
+	"version": "0.0.0",
+	"type": "elgg-plugin",
+	"description": "Theme editor",
+	"homepage": "http://hypejunction.com",
+	"keywords": [
+		"elgg", "plugin", "theme"
+	],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Ismayil Khayredinov",
+			"email": "info@hypejunction.com"
+		}
+	],
+	"extra": {
+		"installer-name": "hypeTheme"
+	},
+	"require": {
+		"composer/installers": "~1.0"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	}
+}
