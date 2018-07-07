@@ -1,0 +1,57 @@
+.elgg-page-walled-garden-background {
+	background-color: $(topbar-background-color);
+	background-image: url(theme/pattern.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	filter: none;
+}
+
+.elgg-heading-walled-garden {
+	max-height: 3rem;
+	display: inline-block;
+	width: 100%;
+}
+
+.elgg-heading-walled-garden img {
+	max-height: 8rem;
+	min-height: 5rem;
+}
+
+.elgg-heading-walled-garden a {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.elgg-page-walled-garden .elgg-layout-content .elgg-module {
+	border: none;
+}
+
+.elgg-page-walled-garden > .elgg-inner > div.elgg-page-body {
+	border-radius: 4px;
+}
+
+.elgg-page-walled-garden > .elgg-inner {
+	width: 40rem;
+	max-width: 100%;
+}
+
+.elgg-page-walled-garden .elgg-form .elgg-fieldset-horizontal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.elgg-page-walled-garden  .elgg-fieldset-horizontal > .elgg-field {
+	flex: 1;
+	margin-bottom: 0;
+}
+
+.elgg-page-walled-garden .elgg-field.elgg-field-composite {
+	margin-bottom: 0;
+}
+
+.elgg-page-walled-garden .elgg-form-register .elgg-form-footer {
+	margin-top: 2rem;
+}

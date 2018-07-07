@@ -17,8 +17,8 @@ foreach (['svg', 'png', 'gif', 'jpg'] as $ext) {
 	}
 }
 
-echo elgg_format_element('div', [
-	'class' => 'elgg-heading-site'
+echo elgg_format_element('h1', [
+	'class' => 'elgg-heading-walled-garden'
 ], elgg_view('output/url', [
 	'text' => $text,
 	'href' => $site->getURL(),

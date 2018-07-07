@@ -16,8 +16,8 @@ foreach ($families as $family => $variants) {
 	$url_families[] = $url_family;
 }
 
-$url = elgg_http_add_url_query_elements("https://fonts.googleapis.com/css", [
-	'family' => implode('|', $url_families),
-]);
+$url_families = implode('|', $url_families);
+
+$url = "https://fonts.googleapis.com/css?family=$url_families";
 
 echo "@import url('$url');";

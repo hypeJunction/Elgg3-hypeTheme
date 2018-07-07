@@ -33,6 +33,8 @@ class Bootstrap extends PluginBootstrap {
 	 * {@inheritdoc}
 	 */
 	public function init() {
+		elgg_register_css('elgg.walled_garden', elgg_get_simplecache_url('walled_garden.css'));
+
 		elgg_extend_view('elements/buttons.css', 'theme/elements/buttons.css');
 		elgg_extend_view('elements/components.css', 'theme/elements/components.css');
 		elgg_extend_view('elements/icons.css', 'theme/elements/icons.css');
@@ -46,6 +48,7 @@ class Bootstrap extends PluginBootstrap {
 		elgg_extend_view('elements/typography.css', 'theme/elements/typography.css');
 		elgg_extend_view('elgg.css', 'theme/elements/plugins.css');
 		elgg_extend_view('elements/forms.css', 'elements/forms/colorpicker.css');
+		elgg_extend_view('walled_garden.css', 'theme/elements/walled_garden.css');
 
 		elgg_register_plugin_hook_handler('register', 'menu:page', PageMenu::class);
 
@@ -59,6 +62,8 @@ class Bootstrap extends PluginBootstrap {
 
 		elgg_register_plugin_hook_handler('menus', 'menu:editor', AddCustomMenus::class);
 		elgg_register_plugin_hook_handler('register', 'menu:landing:cta', LandingCta::class);
+
+		elgg_register_plugin_hook_handler('shell', 'page', SetPageShell::class);
 	}
 
 	/**
