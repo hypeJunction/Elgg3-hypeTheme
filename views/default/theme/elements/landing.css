@@ -1,3 +1,11 @@
+.elgg-nav-logo {
+	max-width: 50%;
+}
+
+#login-dropdown {
+	margin-left: auto;
+}
+
 .elgg-page-landing .elgg-page-hero > .elgg-inner {
 	max-width: 100%;
 	margin: 0;
@@ -6,7 +14,7 @@
 
 .landing-hero {
 	position: relative;
-	padding: 5rem;
+	padding: 1rem;
 }
 
 .landing-hero__bg {
@@ -39,12 +47,13 @@
 	display: block;
 	max-width: $(desktop);
 	margin: 0 auto;
-	padding: 2rem;
+	padding: 1rem 2rem;
 }
 
 .landing-hero__column--right {
 	text-align: center;
-	padding: 0 3rem;
+	margin-top: 2rem;
+	padding: 0;
 }
 
 .landing-hero__columns--vcentered {
@@ -71,6 +80,15 @@
 	margin-bottom: 2rem;
 }
 
+.elgg-menu.landing-hero__cta-bank {
+	margin: 1rem -0.5rem;
+	flex-wrap: wrap;
+}
+
+.elgg-menu.landing-hero__cta-bank > li {
+	margin: 0.5rem;
+}
+
 .landing-hero__cta-bank .elgg-button {
 	font-size: 1.5rem;
 	padding: 1rem 2rem;
@@ -90,7 +108,7 @@
 }
 
 .landing-features {
-	padding: 3rem;
+	padding: 1rem;
 }
 
 .landing-features__column {
@@ -149,12 +167,13 @@
 	}
 	.elgg-body {
 		max-width: 40rem;
-		padding: 2rem 5rem;
+		padding: 1rem;
 	}
 	.is-vcentered {
 		align-items: center;
 	}
 }
+
 
 .landing-slides__title {
 	font-weight: 600;
@@ -200,3 +219,37 @@
 	padding: 1rem;
 	text-align: right;
 }
+
+@media $(media-tablet-up) {
+	.landing-hero__column--right {
+		margin-top: 0;
+		padding: 0 3rem;
+	}
+	
+	.landing-features {
+		padding: 3rem;
+	}
+	
+	.landing-slides__column .elgg-body {
+		padding: 2rem 5rem;
+	}
+	
+	.landing-hero {
+		padding: 3rem;
+	}
+	
+	.landing-hero__content {
+		padding: 0 3rem;
+	}
+}
+
+@media $(media-desktop-up) {
+	.landing-hero {
+		padding: 5rem;
+	}
+	
+	.landing-hero__content {
+		padding: 2rem;
+	}
+}
+

@@ -50,7 +50,7 @@ class Fonts {
 				],
 			],
 			'page-topbar' => [
-				'selector' => '.elgg-page-topbar',
+				'selector' => '.elgg-page-topbar, #login-dropdown > a, .elgg-nav-search',
 				'label' => 'Topbar Menus',
 				'default' => [
 					'font-family' => 'Poppins',
