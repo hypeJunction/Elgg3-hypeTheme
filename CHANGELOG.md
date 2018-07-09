@@ -1,3 +1,13 @@
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/hypeJunctionPro/Elgg3-hypeTheme/compare/1.0.2...1.0.3) (2018-07-09)
+
+
+### Bug Fixes
+
+* **menus:** reduce alt icon size in size menu ([59f9efa](https://github.com/hypeJunctionPro/Elgg3-hypeTheme/commit/59f9efa))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/hypeJunctionPro/Elgg3-hypeTheme/compare/1.0.1...1.0.2) (2018-07-08)
 
