@@ -7,7 +7,6 @@ Theme editor
 * Configure theme colors
 * Configure theme breakpoints
 * Configure theme fonts
-* Configure theme landing page
 
 ## Credits
 

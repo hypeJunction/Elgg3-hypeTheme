@@ -20,22 +20,7 @@
 
     <requires>
         <type>plugin</type>
-        <name>hypeVue</name>
-    </requires>
-
-    <requires>
-        <type>plugin</type>
-        <name>hypeTwig</name>
-    </requires>
-
-    <requires>
-        <type>plugin</type>
         <name>hypePost</name>
-    </requires>
-
-    <requires>
-        <type>plugin</type>
-        <name>hypeSlider</name>
     </requires>
 
     <suggests>

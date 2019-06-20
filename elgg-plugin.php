@@ -20,10 +20,6 @@ $conf = [
 			'controller' => \hypeJunction\Theme\SaveAssetsAction::class,
 			'access' => 'admin',
 		],
-		'landing/editor/save' => [
-			'controller' => \hypeJunction\Theme\SaveLandingDataAction::class,
-			'access' => 'admin',
-		],
 	],
 
 	'views' => [

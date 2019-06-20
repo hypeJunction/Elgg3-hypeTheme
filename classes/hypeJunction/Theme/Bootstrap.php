@@ -39,7 +39,6 @@ class Bootstrap extends PluginBootstrap {
 		elgg_extend_view('elements/components.css', 'theme/elements/components.css');
 		elgg_extend_view('elements/icons.css', 'theme/elements/icons.css');
 		elgg_extend_view('elements/layout.css', 'theme/elements/topbar.css');
-		elgg_extend_view('elements/layout.css', 'theme/elements/landing.css');
 		elgg_extend_view('elements/modules.css', 'theme/elements/modules.css');
 		elgg_extend_view('elements/widgets.css', 'theme/elements/widgets.css');
 		elgg_extend_view('elements/navigation.css', 'theme/elements/navigation.css');
@@ -57,11 +56,6 @@ class Bootstrap extends PluginBootstrap {
 		elgg_register_plugin_hook_handler('entity:icon:url', 'site', SetSiteIconUrl::class);
 
 		elgg_register_simplecache_view('elements/fonts.css');
-
-		elgg_register_plugin_hook_handler('blocks', 'landing', SetLandingData::class);
-
-		elgg_register_plugin_hook_handler('menus', 'menu:editor', AddCustomMenus::class);
-		elgg_register_plugin_hook_handler('register', 'menu:landing:cta', LandingCta::class);
 
 		elgg_register_plugin_hook_handler('shell', 'page', SetPageShell::class);
 	}

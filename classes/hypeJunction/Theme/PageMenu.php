@@ -48,14 +48,5 @@ class PageMenu {
 			'section' => 'theme',
 			'context' => ['admin'],
 		]));
-
-		$menu->add(ElggMenuItem::factory([
-			'name' => 'admin:theme:landing',
-			'text' => elgg_echo('admin:theme:landing'),
-			'href' => 'admin/theme/landing',
-			'section' => 'theme',
-			'context' => ['admin'],
-		]));
-
 	}
 }

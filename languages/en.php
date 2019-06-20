@@ -6,7 +6,6 @@ return [
 	'admin:theme:breakpoints' => 'Breakpoints',
 	'admin:theme:fonts' => 'Fonts',
 	'admin:theme:assets' => 'Assets',
-	'admin:theme:landing' => 'Landing Page',
 
 	'admin:theme:colors:success' => 'Theme colors have been saved',
 	'admin:theme:breakpoints:success' => 'Theme breakpoints have been saved',
@@ -75,8 +74,4 @@ return [
 	'assets:logo.png' => 'Site Logo (PNG format)',
 	'assets:topbar-logo.svg' => 'Topbar Logo (SVG format)',
 	'assets:topbar-logo.png' => 'Topbar Logo (PNG format)',
-
-	'admin:menus:landing:cta' => 'Landing Page CTA',
-
-
 ];
