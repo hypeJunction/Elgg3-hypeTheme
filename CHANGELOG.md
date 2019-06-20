@@ -1,3 +1,18 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/hypeJunctionPro/Elgg3-hypeTheme/compare/1.0.3...1.1.0) (2019-06-20)
+
+
+### Bug Fixes
+
+* **warning:** create an assets dir when plugin activated ([37a87e3](https://github.com/hypeJunctionPro/Elgg3-hypeTheme/commit/37a87e3))
+
+
+### Features
+
+* **landing:** move landing page editor into its own plugin ([a33b046](https://github.com/hypeJunctionPro/Elgg3-hypeTheme/commit/a33b046))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/hypeJunctionPro/Elgg3-hypeTheme/compare/1.0.2...1.0.3) (2018-07-09)
 
