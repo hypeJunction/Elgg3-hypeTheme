@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/hypeJunction/Elgg3-hypeTheme/compare/1.1.0...1.1.1) (2019-06-20)
+
+
+### Bug Fixes
+
+* **releases:** use correct github URL ([7756eda](https://github.com/hypeJunction/Elgg3-hypeTheme/commit/7756eda))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/hypeJunctionPro/Elgg3-hypeTheme/compare/1.0.3...1.1.0) (2019-06-20)
 
