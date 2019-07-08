@@ -12,7 +12,7 @@ class SetThemeVars {
 
 		$theme = [
 			// layout and shell
-			'body-background-color' => '#fafafb',
+			'body-background-color' => '#f7fafc',
 
 			// Typography
 			'font-size' => '16px', // global font size

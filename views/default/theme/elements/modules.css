@@ -18,3 +18,7 @@
 .elgg-module-aside {
 	border: 1px solid $(border-color-soft);
 }
+
+.elgg-page-menu > .elgg-body {
+	padding: 0 !important;
+}
