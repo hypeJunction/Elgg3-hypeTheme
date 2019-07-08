@@ -1,3 +1,13 @@
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/hypeJunction/Elgg3-hypeTheme/compare/1.1.1...1.1.2) (2019-07-08)
+
+
+### Bug Fixes
+
+* **nav:** add a way to disable page menu ([6acc458](https://github.com/hypeJunction/Elgg3-hypeTheme/commit/6acc458))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/hypeJunction/Elgg3-hypeTheme/compare/1.1.0...1.1.1) (2019-06-20)
 
