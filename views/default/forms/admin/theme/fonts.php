@@ -9,8 +9,11 @@ foreach ($families as $family => $variants) {
 	$url_family .= ':' . implode(',', $variants);
 	$url = "https://fonts.googleapis.com/css?family=$url_family";
 
-	elgg_register_css("font:$family", $url);
-	elgg_load_css("font:$family");
+	// (4.x) elgg_register_css / elgg_load_css removed. Inline an
+	// @import for the external Google Fonts URL so the preview swatch
+	// still renders in the admin font picker. Acceptable in this form-
+	// only, admin-only view.
+	echo '<style>@import url(' . htmlspecialchars(json_encode($url), ENT_QUOTES) . ');</style>';
 
 	$options_values[$family] = [
 		'text' => $family,

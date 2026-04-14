@@ -33,7 +33,9 @@ class Bootstrap extends PluginBootstrap {
 	 * {@inheritdoc}
 	 */
 	public function init() {
-		elgg_register_css('elgg.walled_garden', elgg_get_simplecache_url('walled_garden.css'));
+		// (4.x) elgg_register_css removed; the walled_garden.css simplecache
+		// view is loaded directly via elgg_require_css('walled_garden') from
+		// views/default/page/walled_garden.php.
 
 		elgg_extend_view('elements/buttons.css', 'theme/elements/buttons.css');
 		elgg_extend_view('elements/components.css', 'theme/elements/components.css');

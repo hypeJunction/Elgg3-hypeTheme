@@ -9,7 +9,7 @@
  * @uses $vars['sysmessages'] A 2d array of various message registers, passed from system_messages()
  */
 
-elgg_load_css('elgg.walled_garden');
+elgg_require_css('walled_garden');
 
 // render content before head so that JavaScript and CSS can be loaded. See #4032
 $messages = elgg_view('page/elements/messages', ['object' => elgg_extract('sysmessages', $vars)]);
