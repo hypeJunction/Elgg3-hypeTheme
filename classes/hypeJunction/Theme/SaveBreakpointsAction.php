@@ -21,8 +21,9 @@ class SaveBreakpointsAction {
 		$tablet = $request->getParam('tablet') ?: 50;
 		$desktop = $request->getParam('desktop') ?: 80;
 
-		elgg_set_plugin_setting('breakpoint:tablet', $tablet, 'hypeTheme');
-		elgg_set_plugin_setting('breakpoint:desktop', $desktop, 'hypeTheme');
+		$plugin = elgg_get_plugin_from_id('hypetheme');
+		$plugin->setSetting('breakpoint:tablet', $tablet);
+		$plugin->setSetting('breakpoint:desktop', $desktop);
 
 		elgg_flush_caches();
 

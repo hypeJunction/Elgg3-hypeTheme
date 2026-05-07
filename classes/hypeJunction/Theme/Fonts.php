@@ -2,7 +2,7 @@
 
 namespace hypeJunction\Theme;
 
-use Elgg\Di\ServiceFacade;
+use Elgg\Traits\Di\ServiceFacade;
 
 /**
  * Fonts class.
@@ -137,7 +137,7 @@ class Fonts {
 	 * @return void
 	 */
 	public function setValue($prop, \stdClass $values) {
-		elgg_set_plugin_setting($prop, serialize($values), 'hypeFonts');
+		elgg_get_plugin_from_id('hypetheme')->setSetting("font:$prop", serialize($values));
 	}
 
 	/**
@@ -148,7 +148,7 @@ class Fonts {
 	 * @return \stdClass|null
 	 */
 	public function getValue($prop) {
-		$value = elgg_get_plugin_setting($prop, 'hypeFonts');
+		$value = elgg_get_plugin_setting("font:$prop", 'hypetheme');
 		if ($value) {
 			return unserialize($value);
 		}

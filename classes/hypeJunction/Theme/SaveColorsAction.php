@@ -20,8 +20,9 @@ class SaveColorsAction {
 
 		$vars = $request->getParam('vars');
 
+		$plugin = elgg_get_plugin_from_id('hypetheme');
 		foreach ($vars as $key => $value) {
-			elgg_set_plugin_setting("theme:vars:$key", $value, 'hypeTheme');
+			$plugin->setSetting("theme:vars:$key", $value);
 		}
 
 		elgg_flush_caches();
