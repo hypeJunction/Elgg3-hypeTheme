@@ -1,5 +1,5 @@
 <?php
 
 return [
-	'theme.fonts' => \DI\object(\hypeJunction\Theme\Fonts::class),
+	'theme.fonts' => \DI\create(\hypeJunction\Theme\Fonts::class),
 ];
