@@ -1,3 +1,9 @@
+<?php
+/**
+ * Typography CSS template — emits font selectors from configured props.
+ */
+
+?>
 blockquote {
 	background: $(background-color-mild);
 	color: $(text-color-strong);
@@ -16,10 +22,8 @@ $props = \hypeJunction\Theme\Fonts::instance()->getProps();
 foreach ($props as $prop => $opts) {
 	$selector = $opts['selector'];
 
-	echo "$selector { 
+	echo "$selector {
 		font-family: \$(font-family-$prop, \$(font-family));
 		font-weight: \$(font-weight-$prop, normal);
 	}";
 }
-?>
-

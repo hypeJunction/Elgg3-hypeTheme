@@ -5,6 +5,9 @@ namespace hypeJunction\Theme;
 use Elgg\Http\ResponseBuilder;
 use Elgg\Request;
 
+/**
+ * SaveFontsAction class.
+ */
 class SaveFontsAction {
 
 	/**
@@ -19,7 +22,6 @@ class SaveFontsAction {
 
 		$families = [];
 		foreach ($fonts as $prop => $values) {
-
 			$family = elgg_extract('font-family', $values);
 			$families[$family][] = elgg_extract('font-weight', $values);
 

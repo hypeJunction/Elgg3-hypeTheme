@@ -18,31 +18,29 @@ $content = elgg_extract('body', $vars);
 $header = elgg_view('page/elements/walled_garden/header', $vars);
 $footer = elgg_view('page/elements/walled_garden/footer', $vars);
 
-$body = <<<__BODY
-<div class="elgg-page elgg-page-walled-garden">
-	<div class="elgg-page-walled-garden-background"></div>
-	<div class="elgg-page-messages">
-		$messages
+$body = "<div class=\"elgg-page elgg-page-walled-garden\">
+	<div class=\"elgg-page-walled-garden-background\"></div>
+	<div class=\"elgg-page-messages\">
+		{$messages}
 	</div>
-	<div class="elgg-inner">
-		<div class="elgg-page-header">
-			<div class="elgg-inner">
-				$header
+	<div class=\"elgg-inner\">
+		<div class=\"elgg-page-header\">
+			<div class=\"elgg-inner\">
+				{$header}
 			</div>
 		</div>
-		<div class="elgg-page-body">
-			<div class="elgg-inner">
-				$content
+		<div class=\"elgg-page-body\">
+			<div class=\"elgg-inner\">
+				{$content}
 			</div>
 		</div>
-		<div class="elgg-page-footer">
-			<div class="elgg-inner">
-				$footer
+		<div class=\"elgg-page-footer\">
+			<div class=\"elgg-inner\">
+				{$footer}
 			</div>
 		</div>
 	</div>
-</div>
-__BODY;
+</div>";
 
 $body .= elgg_view('page/elements/foot');
 

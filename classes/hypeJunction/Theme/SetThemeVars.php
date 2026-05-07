@@ -4,8 +4,18 @@ namespace hypeJunction\Theme;
 
 use Elgg\Hook;
 
+/**
+ * SetThemeVars class.
+ */
 class SetThemeVars {
 
+	/**
+	 * __invoke.
+	 *
+	 * @param Hook $hook hook
+	 *
+	 * @return mixed
+	 */
 	public function __invoke(Hook $hook) {
 
 		$vars = $hook->getValue();
@@ -131,8 +141,8 @@ class SetThemeVars {
 		foreach ($props as $prop => $opts) {
 			$values = Fonts::instance()->getValue($prop);
 
-			$vars["font-family-{$prop}"] = $values->{'font-family'} ? : $opts['default']['font-family'];
-			$vars["font-weight-{$prop}"] = $values->{'font-weight'} ? : $opts['defualt']['font-weight'];
+			$vars["font-family-{$prop}"] = $values->{'font-family'} ?: $opts['default']['font-family'];
+			$vars["font-weight-{$prop}"] = $values->{'font-weight'} ?: $opts['defualt']['font-weight'];
 		}
 
 		return $vars;

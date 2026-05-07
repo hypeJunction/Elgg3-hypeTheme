@@ -10,4 +10,5 @@ robots.txt
 /mod/
 composer.lock
 Gemfile.lock
-yarn.lock
+yarn.lockdocker/.env
+tests/deps.local.txt

@@ -25,7 +25,6 @@ foreach ($families as $family => $variants) {
 $props = \hypeJunction\Theme\Fonts::instance()->getProps();
 
 foreach ($props as $prop => $opts) {
-
 	$value = \hypeJunction\Theme\Fonts::instance()->getValue($prop);
 	if (!$value) {
 		$value = (object) elgg_extract('default', $opts);
@@ -51,7 +50,7 @@ foreach ($props as $prop => $opts) {
 				'placeholder' => elgg_echo('fonts:weight:placeholder'),
 				'options' => [100, 200, 300, 400, 500, 600, 700, 800, 900],
 				'name' => "fonts[$prop][font-weight]",
-				'value' => $value->{'font-weight'} ? : 400,
+				'value' => $value->{'font-weight'} ?: 400,
 			],
 		]
 	]);

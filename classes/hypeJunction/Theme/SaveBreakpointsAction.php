@@ -4,12 +4,22 @@ namespace hypeJunction\Theme;
 
 use Elgg\Request;
 
+/**
+ * SaveBreakpointsAction class.
+ */
 class SaveBreakpointsAction {
 
+	/**
+	 * __invoke.
+	 *
+	 * @param Request $request request
+	 *
+	 * @return mixed
+	 */
 	public function __invoke(Request $request) {
 
-		$tablet = $request->getParam('tablet') ? : 50;
-		$desktop = $request->getParam('desktop') ? : 80;
+		$tablet = $request->getParam('tablet') ?: 50;
+		$desktop = $request->getParam('desktop') ?: 80;
 
 		elgg_set_plugin_setting('breakpoint:tablet', $tablet, 'hypeTheme');
 		elgg_set_plugin_setting('breakpoint:desktop', $desktop, 'hypeTheme');

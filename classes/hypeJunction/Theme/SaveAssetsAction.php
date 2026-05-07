@@ -6,6 +6,9 @@ use Elgg\Http\ResponseBuilder;
 use Elgg\Request;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
+/**
+ * SaveAssetsAction class.
+ */
 class SaveAssetsAction {
 
 	/**

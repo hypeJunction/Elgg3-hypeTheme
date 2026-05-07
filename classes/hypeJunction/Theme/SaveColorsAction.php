@@ -4,8 +4,18 @@ namespace hypeJunction\Theme;
 
 use Elgg\Request;
 
+/**
+ * SaveColorsAction class.
+ */
 class SaveColorsAction {
 
+	/**
+	 * __invoke.
+	 *
+	 * @param Request $request request
+	 *
+	 * @return mixed
+	 */
 	public function __invoke(Request $request) {
 
 		$vars = $request->getParam('vars');

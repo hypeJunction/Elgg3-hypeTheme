@@ -5,12 +5,17 @@ namespace hypeJunction\Theme;
 use Elgg\Hook;
 use ElggMenuItem;
 
+/**
+ * PageMenu class.
+ */
 class PageMenu {
 
 	/**
 	 * Setup page menu
 	 *
 	 * @param Hook $hook Hook
+	 *
+	 * @return void
 	 */
 	public function __invoke(Hook $hook) {
 
