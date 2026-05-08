@@ -141,8 +141,8 @@ class SetThemeVars {
 		foreach ($props as $prop => $opts) {
 			$values = Fonts::instance()->getValue($prop);
 
-			$vars["font-family-{$prop}"] = $values->{'font-family'} ?: $opts['default']['font-family'];
-			$vars["font-weight-{$prop}"] = $values->{'font-weight'} ?: $opts['defualt']['font-weight'];
+			$vars["font-family-{$prop}"] = $values?->{'font-family'} ?: $opts['default']['font-family'];
+			$vars["font-weight-{$prop}"] = $values?->{'font-weight'} ?: $opts['default']['font-weight'];
 		}
 
 		return $vars;

@@ -1,6 +1,11 @@
 <?php
 
 $conf = [
+	'plugin' => [
+		'name' => 'hypeTheme',
+		'version' => '4.0.0',
+	],
+
 	'bootstrap' => \hypeJunction\Theme\Bootstrap::class,
 
 	'actions' => [

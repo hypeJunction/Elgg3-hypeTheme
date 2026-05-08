@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="hypetheme">
+	<description>Coding standards for hypetheme plugin.</description>
+	<rule ref="Elgg"/>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/vendors/*</exclude-pattern>
+	<exclude-pattern>*/tests/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+</ruleset>

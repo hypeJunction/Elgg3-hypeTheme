@@ -1,3 +1,27 @@
+<a name="4.0.0"></a>
+# 4.0.0 (2026-05-08)
+
+### Breaking Changes
+
+* **elgg:** raise minimum to Elgg 4.x (PHP 8.1+). Plugins on Elgg 3.x must stay on hypetheme 1.x.
+
+### Bug Fixes
+
+* **SetThemeVars:** use PHP 8.0 nullsafe operator `?->` when accessing font value props (null when no setting saved)
+* **SetThemeVars:** fix typo `'defualt'` → `'default'` in font-weight fallback
+* **elgg-plugin.php:** add missing trailing newline (phpcs)
+
+### Migration (1.x → 4.x)
+
+* **docker:** stack updated to `php:8.1-apache`, `mysql:5.7`, `elgg/elgg 4.3.6`.
+* **ci:** added `.github/workflows/tests.yml` and `lint.yml`.
+
+### Dependency Updates
+
+* `elgg/elgg ^4.0`, PHP `>=8.1`, version bumped to `4.0.0`
+
+---
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/hypeJunction/Elgg3-hypeTheme/compare/1.1.1...1.1.2) (2019-07-08)
 
