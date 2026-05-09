@@ -11,14 +11,8 @@
 	border-radius: 0 0 6px 6px;
 }
 
-.elgg-module:not(.has-list) > .elgg-body {
-	padding: 1rem;
-}
-
 .elgg-module-aside {
 	border: 1px solid $(border-color-soft);
 }
 
-.elgg-page-menu > .elgg-body {
-	padding: 0 !important;
-}
+
