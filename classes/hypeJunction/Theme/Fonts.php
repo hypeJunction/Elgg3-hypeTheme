@@ -123,7 +123,7 @@ class Fonts {
 			],
 		];
 
-		$props = elgg_trigger_plugin_hook('config', 'fonts', null, $props);
+		$props = elgg_trigger_event_results('config', 'fonts', [], $props);
 
 		return $props;
 	}

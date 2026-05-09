@@ -3,7 +3,7 @@
 $file = \Elgg\Project\Paths::elgg() . 'engine/theme.php';
 $default_vars = \Elgg\Includer::includeFile($file);
 
-$vars = elgg_trigger_plugin_hook('vars:compiler', 'css', null, $default_vars);
+$vars = elgg_trigger_event_results('vars:compiler', 'css', [], $default_vars);
 ?>
 	<table class="elgg-table-alt">
 		<tbody>

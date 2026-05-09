@@ -2,7 +2,7 @@
 
 namespace hypeJunction\Theme;
 
-use Elgg\Hook;
+use Elgg\Event;
 use ElggMenuItem;
 
 /**
@@ -13,13 +13,13 @@ class PageMenu {
 	/**
 	 * Setup page menu
 	 *
-	 * @param Hook $hook Hook
+	 * @param Event $event Event
 	 *
 	 * @return void
 	 */
-	public function __invoke(Hook $hook) {
+	public function __invoke(Event $event) {
 
-		$menu = $hook->getValue();
+		$menu = $event->getValue();
 		/* @var $menu \Elgg\Menu\MenuItems */
 
 		$menu->add(ElggMenuItem::factory([

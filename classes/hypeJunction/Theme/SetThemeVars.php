@@ -2,7 +2,7 @@
 
 namespace hypeJunction\Theme;
 
-use Elgg\Hook;
+use Elgg\Event;
 
 /**
  * SetThemeVars class.
@@ -12,13 +12,13 @@ class SetThemeVars {
 	/**
 	 * __invoke.
 	 *
-	 * @param Hook $hook hook
+	 * @param Event $event event
 	 *
 	 * @return mixed
 	 */
-	public function __invoke(Hook $hook) {
+	public function __invoke(Event $event) {
 
-		$vars = $hook->getValue();
+		$vars = $event->getValue();
 
 		$theme = [
 			// layout and shell

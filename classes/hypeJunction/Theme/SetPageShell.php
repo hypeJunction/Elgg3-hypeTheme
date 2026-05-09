@@ -2,7 +2,7 @@
 
 namespace hypeJunction\Theme;
 
-use Elgg\Hook;
+use Elgg\Event;
 
 /**
  * SetPageShell class.
@@ -12,13 +12,13 @@ class SetPageShell {
 	/**
 	 * __invoke.
 	 *
-	 * @param Hook $hook hook
+	 * @param Event $event event
 	 *
 	 * @return mixed
 	 */
-	public function __invoke(Hook $hook) {
+	public function __invoke(Event $event) {
 
-		$identifier = $hook->getParam('identifier');
+		$identifier = $event->getParam('identifier');
 
 		switch ($identifier) {
 			case 'login':

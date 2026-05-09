@@ -53,15 +53,15 @@ class Bootstrap extends PluginBootstrap {
 		elgg_extend_view('elements/forms.css', 'elements/forms/colorpicker.css');
 		elgg_extend_view('walled_garden.css', 'theme/elements/walled_garden.css');
 
-		elgg_register_plugin_hook_handler('register', 'menu:page', PageMenu::class);
+		elgg_register_event_handler('register', 'menu:page', PageMenu::class);
 
-		elgg_register_plugin_hook_handler('vars:compiler', 'css', SetThemeVars::class, 800);
+		elgg_register_event_handler('vars:compiler', 'css', SetThemeVars::class, 800);
 
-		elgg_register_plugin_hook_handler('entity:icon:url', 'site', SetSiteIconUrl::class);
+		elgg_register_event_handler('entity:icon:url', 'site', SetSiteIconUrl::class);
 
 		elgg_register_simplecache_view('elements/fonts.css');
 
-		elgg_register_plugin_hook_handler('shell', 'page', SetPageShell::class);
+		elgg_register_event_handler('shell', 'page', SetPageShell::class);
 	}
 
 	/**

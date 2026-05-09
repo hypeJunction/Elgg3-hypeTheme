@@ -2,7 +2,7 @@
 
 namespace hypeJunction\Theme;
 
-use Elgg\Hook;
+use Elgg\Event;
 
 /**
  * SetSiteIconUrl class.
@@ -12,11 +12,11 @@ class SetSiteIconUrl {
 	/**
 	 * __invoke.
 	 *
-	 * @param Hook $hook hook
+	 * @param Event $event event
 	 *
 	 * @return mixed
 	 */
-	public function __invoke(Hook $hook) {
+	public function __invoke(Event $event) {
 		return elgg_get_simplecache_url('theme/logo.svg');
 	}
 }

@@ -21,7 +21,7 @@ class SetThemeVarsTest extends IntegrationTestCase {
 	}
 
 	public function testSeedDefaultsExposedToCssCompiler(): void {
-		$result = elgg_trigger_plugin_hook('vars:compiler', 'css', null, []);
+		$result = elgg_trigger_event_results('vars:compiler', 'css', [], []);
 
 		$this->assertIsArray($result);
 		$this->assertArrayHasKey('font-size', $result);
@@ -33,7 +33,7 @@ class SetThemeVarsTest extends IntegrationTestCase {
 		$plugin = elgg_get_plugin_from_id('hypetheme');
 		$plugin->setSetting('theme:vars:anchor-color', '#123456');
 
-		$result = elgg_trigger_plugin_hook('vars:compiler', 'css', null, []);
+		$result = elgg_trigger_event_results('vars:compiler', 'css', [], []);
 
 		$this->assertSame('#123456', $result['anchor-color']);
 	}
@@ -43,7 +43,7 @@ class SetThemeVarsTest extends IntegrationTestCase {
 		$plugin->setSetting('breakpoint:tablet', 40);
 		$plugin->setSetting('breakpoint:desktop', 70);
 
-		$result = elgg_trigger_plugin_hook('vars:compiler', 'css', null, []);
+		$result = elgg_trigger_event_results('vars:compiler', 'css', [], []);
 
 		$this->assertSame('40rem', $result['tablet']);
 		$this->assertSame('70rem', $result['desktop']);
