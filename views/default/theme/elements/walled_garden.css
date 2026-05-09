@@ -1,5 +1,5 @@
 .elgg-page-walled-garden-background {
-	background-color: $(topbar-background-color);
+	background-color: var(--elgg-topbar-background-color);
 	background-image: url(theme/pattern.svg);
 	background-repeat: no-repeat;
 	background-size: cover;

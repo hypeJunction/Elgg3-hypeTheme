@@ -3,7 +3,7 @@
 }
 
 .elgg-module-widget.elgg-state-draggable:hover {
-	border-color: $(border-color-strong);
+	border-color: var(--elgg-border-color-strong);
 }
 
 .elgg-module-widget:hover .elgg-menu-widget-container {
@@ -19,8 +19,8 @@
 	}
 	.elgg-widget-more {
 		padding: 0.5rem 1rem;
-		border-top: 1px solid $(border-color-soft);
-		background: $(background-color-soft);
+		border-top: 1px solid var(--elgg-border-color-soft);
+		background: var(--elgg-background-color-soft);
 	}
 }
 

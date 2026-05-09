@@ -1,5 +1,5 @@
 .elgg-menu {
-	font-family: $(h-font-family);
+	font-family: var(--elgg-h-font-family);
 }
 
 .elgg-menu-hero > li > a {
@@ -9,7 +9,7 @@
 
 .elgg-menu-filter,
 .elgg-tabs {
-	border-bottom: 1px solid $(border-color-soft);
+	border-bottom: 1px solid var(--elgg-border-color-soft);
 	flex-direction: row;
 	white-space: nowrap;
 	overflow-x: auto;
@@ -38,11 +38,11 @@
 	& > .elgg-state-selected,
 	& > li:hover {
 		background: transparent;
-		border-color: $(border-color-highlight);
+		border-color: var(--elgg-border-color-highlight);
 		
 		& > a {
 			background: none;
-			color: $(text-color-highlight);
+			color: var(--elgg-text-color-highlight);
 			
 			&:hover {
 				background: none;
@@ -59,7 +59,7 @@
 
 .elgg-menu:not(.elgg-menu-hz) .elgg-badge {
 	min-width: 1.25rem;
-	background-color: $(background-color-highlight);
+	background-color: var(--elgg-background-color-highlight);
 	color: #fff;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .elgg-pagination .elgg-state-selected > span {
-	background: $(background-color-highlight);
+	background: var(--elgg-background-color-highlight);
 	color: #fff;
 	border-radius: 25px;
 }

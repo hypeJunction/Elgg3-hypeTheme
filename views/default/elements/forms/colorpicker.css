@@ -4,6 +4,6 @@ input.elgg-input-color {
 	box-sizing: content-box;
 	height: 2rem;
 	width: 2rem;
-	border: 1px solid $(border-color-soft);
-	background: $(background-color-soft);
+	border: 1px solid var(--elgg-border-color-soft);
+	background: var(--elgg-background-color-soft);
 }

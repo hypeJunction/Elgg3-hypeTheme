@@ -11,7 +11,7 @@
 
 .elgg-listing-full-header {
 	background: #fff;
-	border: 1px solid $(border-color-soft) !important;
+	border: 1px solid var(--elgg-border-color-soft) !important;
 	border-radius: 6px 6px 0 0;
 	padding: 1rem;
 	margin: 0;
@@ -19,7 +19,7 @@
 
 .elgg-listing-full-body {
 	background: #fff;
-	border: 1px solid $(border-color-soft) !important;
+	border: 1px solid var(--elgg-border-color-soft) !important;
 	border-top: none !important;
 	border-radius: 0 0 6px 6px;
 	padding: 1rem;
@@ -64,7 +64,7 @@
 
 .media-album-item {
 	padding: 3px;
-	border: 1px solid $(border-color-soft);
+	border: 1px solid var(--elgg-border-color-soft);
 	border-radius: 3px;
 	background: #fff;
 	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1), -1px -1px 8px rgba(0, 0, 0, 0.1);
@@ -83,5 +83,5 @@
 }
 
 .theme-assets__preview {
-	background-color: $(background-color-mild);
+	background-color: var(--elgg-background-color-mild);
 }
