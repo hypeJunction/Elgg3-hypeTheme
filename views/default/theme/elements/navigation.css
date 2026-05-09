@@ -1,10 +1,29 @@
+:root {
+	--hype-color-white: #ffffff;
+	--hype-color-text-muted: #666666;
+	--hype-shadow-overlay: rgba(0, 0, 0, 0.1);
+	--hype-shadow-divider: rgba(0, 0, 0, 0.2);
+	--hype-border-radius-sm: 3px;
+	--hype-border-radius-md: 6px;
+	--hype-border-radius-lg: 25px;
+	--hype-border-radius-pill: 2rem;
+	--hype-border-radius-walled: 4px;
+	--hype-card-shadow: 1px 1px 8px var(--hype-shadow-overlay), -1px -1px 8px var(--hype-shadow-overlay);
+	--hype-transition-color: color 0.5s;
+	--hype-transition-background: background 0.5s;
+	--hype-transition-border: border 0.5s;
+	--hype-font-size-hero-menu: 0.9rem;
+	--hype-font-size-icon-alt: 0.5rem;
+	--hype-font-size-filter-label: 80%;
+}
+
 .elgg-menu {
 	font-family: var(--elgg-h-font-family);
 }
 
 .elgg-menu-hero > li > a {
 	text-transform: none !important;
-	font-size: 0.9rem !important;
+	font-size: var(--hype-font-size-hero-menu) !important;
 }
 
 .elgg-menu-filter,
@@ -14,7 +33,7 @@
 	white-space: nowrap;
 	overflow-x: auto;
 	overflow-y: hidden;
-	
+
 	& > li {
 		background: transparent;
 		border-width: 0 0 1px;
@@ -22,28 +41,28 @@
 		border-color: transparent;
 		margin: 0;
 		top: 0;
-		
+
 		& > a {
 			background: none;
 			text-transform: uppercase;
-			font-size: 80%;
-			color: #666666;
-			
+			font-size: var(--hype-font-size-filter-label);
+			color: var(--hype-color-text-muted);
+
 			&:hover {
 				background: none;
 			}
 		}
 	}
-	
+
 	& > .elgg-state-selected,
 	& > li:hover {
 		background: transparent;
 		border-color: var(--elgg-border-color-highlight);
-		
+
 		& > a {
 			background: none;
 			color: var(--elgg-text-color-highlight);
-			
+
 			&:hover {
 				background: none;
 			}
@@ -53,26 +72,25 @@
 
 .elgg-menu-page,
 .elgg-menu-owner-block {
-	border-radius: 6px;
+	border-radius: var(--hype-border-radius-md);
 	overflow: hidden;
 }
 
 .elgg-menu:not(.elgg-menu-hz) .elgg-badge {
 	min-width: 1.25rem;
 	background-color: var(--elgg-background-color-highlight);
-	color: #fff;
+	color: var(--hype-color-white);
 }
 
 .elgg-menu-hover {
 	overflow: hidden;
-	border-radius: 6px;
+	border-radius: var(--hype-border-radius-md);
 }
 
-.elgg-menu-page .elgg-menu-item-has-toggle>.elgg-child-menu,
-.elgg-menu-owner-block .elgg-menu-item-has-toggle>.elgg-child-menu {
-	border-top: 1px solid rgba(0, 0, 0, 0.2);
+.elgg-menu-page .elgg-menu-item-has-toggle > .elgg-child-menu,
+.elgg-menu-owner-block .elgg-menu-item-has-toggle > .elgg-child-menu {
+	border-top: 1px solid var(--hype-shadow-divider);
 }
-
 
 .elgg-pagination li > a,
 .elgg-pagination li > span {
@@ -83,16 +101,17 @@
 
 .elgg-pagination .elgg-state-selected > span {
 	background: var(--elgg-background-color-highlight);
-	color: #fff;
-	border-radius: 25px;
+	color: var(--hype-color-white);
+	border-radius: var(--hype-border-radius-lg);
 }
 
 .elgg-pagination li {
 	border: none;
 }
 
-.elgg-pagination li > a, .elgg-pagination li > span {
-	border-radius: 25px;
+.elgg-pagination li > a,
+.elgg-pagination li > span {
+	border-radius: var(--hype-border-radius-lg);
 	margin: 0 3px;
 }
 
@@ -105,5 +124,5 @@
 }
 
 .elgg-menu-site .elgg-menu-parent .elgg-anchor-icon-alt {
-	font-size: 0.5rem;
+	font-size: var(--hype-font-size-icon-alt);
 }

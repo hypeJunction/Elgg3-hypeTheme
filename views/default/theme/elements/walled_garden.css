@@ -29,7 +29,7 @@
 }
 
 .elgg-page-walled-garden > .elgg-inner > div.elgg-page-body {
-	border-radius: 4px;
+	border-radius: var(--hype-border-radius-walled);
 }
 
 .elgg-page-walled-garden > .elgg-inner {
@@ -43,7 +43,7 @@
 	flex-wrap: wrap;
 }
 
-.elgg-page-walled-garden  .elgg-fieldset-horizontal > .elgg-field {
+.elgg-page-walled-garden .elgg-fieldset-horizontal > .elgg-field {
 	flex: 1;
 	margin-bottom: 0;
 }

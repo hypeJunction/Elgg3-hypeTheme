@@ -1,6 +1,6 @@
 .interactions {
-	background: #fff;
-	border-radius: 6px;
+	background: var(--hype-color-white);
+	border-radius: var(--hype-border-radius-md);
 }
 
 .elgg-menu-river-filter > li {

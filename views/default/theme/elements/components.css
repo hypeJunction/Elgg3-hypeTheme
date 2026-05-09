@@ -2,7 +2,7 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1), -1px -1px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: var(--hype-card-shadow);
 }
 
 .elgg-listing-card-footer {
@@ -10,18 +10,18 @@
 }
 
 .elgg-listing-full-header {
-	background: #fff;
+	background: var(--hype-color-white);
 	border: 1px solid var(--elgg-border-color-soft) !important;
-	border-radius: 6px 6px 0 0;
+	border-radius: var(--hype-border-radius-md) var(--hype-border-radius-md) 0 0;
 	padding: 1rem;
 	margin: 0;
 }
 
 .elgg-listing-full-body {
-	background: #fff;
+	background: var(--hype-color-white);
 	border: 1px solid var(--elgg-border-color-soft) !important;
 	border-top: none !important;
-	border-radius: 0 0 6px 6px;
+	border-radius: 0 0 var(--hype-border-radius-md) var(--hype-border-radius-md);
 	padding: 1rem;
 }
 
@@ -44,11 +44,11 @@
 }
 
 .elgg-module-collapse.elgg-state-collapsed > .elgg-head {
-	border-radius: 6px;
+	border-radius: var(--hype-border-radius-md);
 }
 
 .elgg-page-topbar .elgg-form-search [type="text"] {
-	border-radius: 25px;
+	border-radius: var(--hype-border-radius-lg);
 	padding: 0.5rem 1.25rem;
 }
 
@@ -65,13 +65,13 @@
 .media-album-item {
 	padding: 3px;
 	border: 1px solid var(--elgg-border-color-soft);
-	border-radius: 3px;
-	background: #fff;
-	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1), -1px -1px 8px rgba(0, 0, 0, 0.1);
+	border-radius: var(--hype-border-radius-sm);
+	background: var(--hype-color-white);
+	box-shadow: var(--hype-card-shadow);
 }
 
 .media-album-item-thumb {
-	border-radius: 3px;
+	border-radius: var(--hype-border-radius-sm);
 }
 
 .media-slider .media-album-item .media-album-item-thumb {

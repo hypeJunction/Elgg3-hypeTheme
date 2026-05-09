@@ -1,5 +1,5 @@
 .elgg-button {
-	border-radius: 25px;
+	border-radius: var(--hype-border-radius-lg);
 	line-height: 1.85rem;
 	font-family: var(--elgg-h-font-family);
 }

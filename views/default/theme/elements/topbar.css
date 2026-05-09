@@ -11,7 +11,7 @@
 	padding: .5rem 1rem;
 	line-height: 1.5rem;
 	vertical-align: middle;
-	border-radius: 2rem;
+	border-radius: var(--hype-border-radius-pill);
 	border: 1px solid transparent;
 	margin: 1px;
 }
@@ -23,16 +23,16 @@
 
 @media var(--elgg-media-desktop-up) {
 	.elgg-page-topbar .elgg-menu li:hover > .elgg-child-menu {
-		border-radius: 6px;
+		border-radius: var(--hype-border-radius-md);
 		overflow: hidden;
 		top: 0;
 		background-image: var(--elgg-topbar-gradient);
 	}
-	
+
 	.elgg-page-topbar .elgg-menu li:hover > .elgg-child-menu:before {
 		content: none;
 	}
-	
+
 	.elgg-page-topbar .elgg-menu.elgg-child-menu > li > a:hover {
 		background: var(--elgg-background-color-highlight);
 	}
@@ -46,7 +46,7 @@
 	padding: .5rem 1rem;
 	line-height: 1.5rem;
 	vertical-align: middle;
-	border-radius: 2rem;
+	border-radius: var(--hype-border-radius-pill);
 	border: 1px solid transparent;
 	margin: 1px;
 }

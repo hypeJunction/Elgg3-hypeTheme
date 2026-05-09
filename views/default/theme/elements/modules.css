@@ -1,18 +1,16 @@
 .elgg-module {
-	border-radius: 6px;
-	background: #ffffff;
+	border-radius: var(--hype-border-radius-md);
+	background: var(--hype-color-white);
 }
 
 .elgg-module > *:first-child {
-	border-radius: 6px 6px 0 0;
+	border-radius: var(--hype-border-radius-md) var(--hype-border-radius-md) 0 0;
 }
 
 .elgg-module > *:last-child {
-	border-radius: 0 0 6px 6px;
+	border-radius: 0 0 var(--hype-border-radius-md) var(--hype-border-radius-md);
 }
 
 .elgg-module-aside {
 	border: 1px solid var(--elgg-border-color-soft);
 }
-
-
