@@ -3,7 +3,7 @@
 	"version": "4.0.0",
 	"type": "elgg-plugin",
 	"description": "Theme editor",
-	"homepage": "http://hypejunction.com",
+	"homepage": "https://github.com/hypeJunction/Elgg3-hypeTheme",
 	"keywords": [
 		"elgg",
 		"plugin",
@@ -13,7 +13,7 @@
 	"authors": [
 		{
 			"name": "Ismayil Khayredinov",
-			"email": "info@hypejunction.com"
+			"email": "ismayil.khayredinov@gmail.com"
 		}
 	],
 	"extra": {
