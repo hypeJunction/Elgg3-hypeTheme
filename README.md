@@ -1,6 +1,6 @@
 hypeTheme
 =========
-![Elgg 4.x](https://img.shields.io/badge/Elgg-4.x-orange.svg?style=flat-square)
+![Elgg 7.x](https://img.shields.io/badge/Elgg-7.x-orange.svg?style=flat-square)
 
 Theme editor
 
@@ -14,3 +14,9 @@ Theme editor
 * Placeholder images https://unsplash.com/
 * Placeholder icons https://flaticon.com/
 
+
+## Compatibility
+
+| Plugin version | Elgg version |
+|---|---|
+| current | 7.x |
