@@ -14,7 +14,6 @@ Theme editor
 * Placeholder images https://unsplash.com/
 * Placeholder icons https://flaticon.com/
 
-
 ## Compatibility
 
 | Plugin version | Elgg version |
