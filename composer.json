@@ -17,7 +17,7 @@
         }
     ],
     "extra": {
-        "installer-name": "hypeTheme",
+        "installer-name": "hypetheme",
         "elgg-plugin": {
             "id": "hypetheme"
         }
