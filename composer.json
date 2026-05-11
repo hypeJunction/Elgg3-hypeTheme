@@ -1,6 +1,5 @@
 {
     "name": "hypejunction/hypetheme",
-    "version": "7.0.0",
     "type": "elgg-plugin",
     "description": "Theme editor",
     "homepage": "https://github.com/hypeJunction/Elgg3-hypeTheme",
