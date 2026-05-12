@@ -6,7 +6,11 @@ use Elgg\Request;
 
 class SaveColorsAction {
 
-	public function __invoke(Request $request) {
+	/**
+     * @param Request $request
+     * @return mixed
+     */
+    public function __invoke(Request $request) {
 
 		$vars = $request->getParam('vars');
 

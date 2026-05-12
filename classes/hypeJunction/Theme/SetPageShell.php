@@ -6,7 +6,11 @@ use Elgg\Hook;
 
 class SetPageShell {
 
-	public function __invoke(Hook $hook) {
+	/**
+     * @param Hook $hook
+     * @return mixed
+     */
+    public function __invoke(Hook $hook) {
 
 		$identifier = $hook->getParam('identifier');
 

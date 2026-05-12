@@ -6,7 +6,11 @@ use Elgg\Hook;
 
 class SetThemeVars {
 
-	public function __invoke(Hook $hook) {
+	/**
+     * @param Hook $hook
+     * @return mixed
+     */
+    public function __invoke(Hook $hook) {
 
 		$vars = $hook->getValue();
 

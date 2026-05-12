@@ -15,7 +15,10 @@ class Fonts {
 		return 'theme.fonts';
 	}
 
-	public function getProps() {
+	/**
+     * @return mixed
+     */
+    public function getProps() {
 		$props = [
 			'page' => [
 				'selector' => '.elgg-page',

@@ -6,7 +6,11 @@ use Elgg\Request;
 
 class SaveBreakpointsAction {
 
-	public function __invoke(Request $request) {
+	/**
+     * @param Request $request
+     * @return mixed
+     */
+    public function __invoke(Request $request) {
 
 		$tablet = $request->getParam('tablet') ? : 50;
 		$desktop = $request->getParam('desktop') ? : 80;
