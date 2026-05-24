@@ -11,6 +11,9 @@ class Fonts {
 
 	use ServiceFacade;
 
+	/**
+	 * {@inheritdoc}
+	 */
 	public static function name(): string {
 		return 'theme.fonts';
 	}
