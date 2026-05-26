@@ -27,7 +27,7 @@ class SaveAssetsAction {
 		];
 
 		foreach ($assets as $asset) {
-			$uploads = elgg_get_uploaded_files($asset);
+			$uploads = \elgg_get_uploaded_files($asset);
 			if (empty($uploads)) {
 				continue;
 			}
@@ -38,27 +38,27 @@ class SaveAssetsAction {
 			}
 
 			if (!$upload->isValid()) {
-				register_error(elgg_get_friendly_upload_error($upload->getError()));
+				register_error(\elgg_get_friendly_upload_error($upload->getError()));
 				continue;
 			}
 
 			if (pathinfo($asset, PATHINFO_EXTENSION) !== $upload->getClientOriginalExtension()) {
-				register_error(elgg_echo('theme:upload:error:invalid_format', [
+				register_error(\elgg_echo('theme:upload:error:invalid_format', [
 					$upload->getClientOriginalName()
 				]));
 				continue;
 			}
 
-			$target = elgg_get_data_path() . 'theme/' . $asset;
+			$target = \elgg_get_data_path() . 'theme/' . $asset;
 			if (file_exists($target)) {
 				unlink($target);
 			}
 
-			$upload->move(elgg_get_data_path() . 'theme/', $asset);
+			$upload->move(\elgg_get_data_path() . 'theme/', $asset);
 		}
 
-		elgg_flush_caches();
+		\elgg_flush_caches();
 
-		return elgg_ok_response();
+		return \elgg_ok_response();
 	}
 }

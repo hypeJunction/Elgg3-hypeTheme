@@ -123,7 +123,7 @@ class Fonts {
 			],
 		];
 
-		$props = elgg_trigger_event_results('config', 'fonts', [], $props);
+		$props = \elgg_trigger_event_results('config', 'fonts', [], $props);
 
 		return $props;
 	}
@@ -137,7 +137,7 @@ class Fonts {
 	 * @return void
 	 */
 	public function setValue($prop, \stdClass $values) {
-		elgg_get_plugin_from_id('hypetheme')->setSetting("font:$prop", serialize($values));
+		\elgg_get_plugin_from_id('hypetheme')->setSetting("font:$prop", serialize($values));
 	}
 
 	/**
@@ -148,7 +148,7 @@ class Fonts {
 	 * @return \stdClass|null
 	 */
 	public function getValue($prop) {
-		$value = elgg_get_plugin_setting("font:$prop", 'hypetheme');
+		$value = \elgg_get_plugin_setting("font:$prop", 'hypetheme');
 		if ($value) {
 			return unserialize($value);
 		}

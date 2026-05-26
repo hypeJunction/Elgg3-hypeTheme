@@ -113,11 +113,11 @@ class SetThemeVars {
 		$vars = array_merge($vars, $theme);
 
 		foreach ($vars as $key => $value) {
-			$vars[$key] = elgg_get_plugin_setting("theme:vars:$key", 'hypetheme', $value);
+			$vars[$key] = \elgg_get_plugin_setting("theme:vars:$key", 'hypetheme', $value);
 		}
 
-		$tablet = elgg_get_plugin_setting('breakpoint:tablet', 'hypetheme');
-		$desktop = elgg_get_plugin_setting('breakpoint:desktop', 'hypetheme');
+		$tablet = \elgg_get_plugin_setting('breakpoint:tablet', 'hypetheme');
+		$desktop = \elgg_get_plugin_setting('breakpoint:desktop', 'hypetheme');
 
 		if ($tablet && $desktop) {
 			$tablet_up = $tablet + 0.01;

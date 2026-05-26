@@ -22,8 +22,8 @@ class SaveFontsAction {
 
 		$families = [];
 		foreach ($fonts as $prop => $values) {
-			$family = elgg_extract('font-family', $values);
-			$families[$family][] = elgg_extract('font-weight', $values);
+			$family = \elgg_extract('font-family', $values);
+			$families[$family][] = \elgg_extract('font-weight', $values);
 
 			Fonts::instance()->setValue($prop, (object) $values);
 		}
@@ -32,10 +32,10 @@ class SaveFontsAction {
 			return array_unique($e);
 		}, $families);
 
-		elgg_save_config('theme.fonts', $families);
+		\elgg_save_config('theme.fonts', $families);
 
-		elgg_flush_caches();
+		\elgg_flush_caches();
 
-		return elgg_ok_response();
+		return \elgg_ok_response();
 	}
 }
