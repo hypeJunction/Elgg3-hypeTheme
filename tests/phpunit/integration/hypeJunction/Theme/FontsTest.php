@@ -14,7 +14,7 @@ class FontsTest extends IntegrationTestCase {
 	}
 
 	public function down(): void {
-		$plugin = elgg_get_plugin_from_id('hypetheme');
+		$plugin = \elgg_get_plugin_from_id('hypetheme');
 		foreach (Fonts::instance()->getProps() as $prop => $_) {
 			$plugin->unsetSetting("font:$prop");
 		}
@@ -62,7 +62,7 @@ class FontsTest extends IntegrationTestCase {
 
 		// Verify the legacy 'hypeFonts' plugin id is no longer used:
 		// settings must be on the lowercase 'hypetheme' entity under font:* keys.
-		$raw = elgg_get_plugin_setting('font:page', 'hypetheme');
+		$raw = \elgg_get_plugin_setting('font:page', 'hypetheme');
 		$this->assertNotEmpty($raw);
 		$this->assertEquals($values, unserialize($raw));
 	}

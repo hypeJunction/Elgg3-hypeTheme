@@ -14,14 +14,14 @@ class SetThemeVarsTest extends IntegrationTestCase {
 	}
 
 	public function down(): void {
-		$plugin = elgg_get_plugin_from_id('hypetheme');
+		$plugin = \elgg_get_plugin_from_id('hypetheme');
 		$plugin->unsetSetting('theme:vars:anchor-color');
 		$plugin->unsetSetting('breakpoint:tablet');
 		$plugin->unsetSetting('breakpoint:desktop');
 	}
 
 	public function testSeedDefaultsExposedToCssCompiler(): void {
-		$result = elgg_trigger_plugin_hook('vars:compiler', 'css', null, []);
+		$result = \elgg_trigger_plugin_hook('vars:compiler', 'css', null, []);
 
 		$this->assertIsArray($result);
 		$this->assertArrayHasKey('font-size', $result);
@@ -30,20 +30,20 @@ class SetThemeVarsTest extends IntegrationTestCase {
 	}
 
 	public function testStoredOverrideTakesPrecedenceOverSeedDefault(): void {
-		$plugin = elgg_get_plugin_from_id('hypetheme');
+		$plugin = \elgg_get_plugin_from_id('hypetheme');
 		$plugin->setSetting('theme:vars:anchor-color', '#123456');
 
-		$result = elgg_trigger_plugin_hook('vars:compiler', 'css', null, []);
+		$result = \elgg_trigger_plugin_hook('vars:compiler', 'css', null, []);
 
 		$this->assertSame('#123456', $result['anchor-color']);
 	}
 
 	public function testCustomBreakpointsReplaceMediaQueryDefaults(): void {
-		$plugin = elgg_get_plugin_from_id('hypetheme');
+		$plugin = \elgg_get_plugin_from_id('hypetheme');
 		$plugin->setSetting('breakpoint:tablet', 40);
 		$plugin->setSetting('breakpoint:desktop', 70);
 
-		$result = elgg_trigger_plugin_hook('vars:compiler', 'css', null, []);
+		$result = \elgg_trigger_plugin_hook('vars:compiler', 'css', null, []);
 
 		$this->assertSame('40rem', $result['tablet']);
 		$this->assertSame('70rem', $result['desktop']);

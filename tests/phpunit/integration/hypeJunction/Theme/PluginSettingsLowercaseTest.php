@@ -23,13 +23,13 @@ class PluginSettingsLowercaseTest extends IntegrationTestCase {
 	 * would silently fall through to the seed default.
 	 */
 	public function testLowercasePluginIdResolvesSettings(): void {
-		$plugin = elgg_get_plugin_from_id('hypetheme');
+		$plugin = \elgg_get_plugin_from_id('hypetheme');
 		$plugin->setSetting('integration_test_marker', 'lowercase_works');
 
 		try {
 			$this->assertSame(
 				'lowercase_works',
-				elgg_get_plugin_setting('integration_test_marker', 'hypetheme')
+				\elgg_get_plugin_setting('integration_test_marker', 'hypetheme')
 			);
 		} finally {
 			$plugin->unsetSetting('integration_test_marker');
@@ -37,8 +37,8 @@ class PluginSettingsLowercaseTest extends IntegrationTestCase {
 	}
 
 	public function testCamelCasePluginIdDoesNotResolve(): void {
-		$camel = elgg_get_plugin_from_id('hypeTheme');
-		$lower = elgg_get_plugin_from_id('hypetheme');
+		$camel = \elgg_get_plugin_from_id('hypeTheme');
+		$lower = \elgg_get_plugin_from_id('hypetheme');
 
 		$this->assertInstanceOf(\ElggPlugin::class, $lower);
 		$this->assertNotEquals($lower, $camel);
@@ -46,13 +46,13 @@ class PluginSettingsLowercaseTest extends IntegrationTestCase {
 	}
 
 	public function testThemeVarsRoundTripUnderLowercaseId(): void {
-		$plugin = elgg_get_plugin_from_id('hypetheme');
+		$plugin = \elgg_get_plugin_from_id('hypetheme');
 		$plugin->setSetting('theme:vars:test-color', '#ff00ff');
 		$plugin->setSetting('breakpoint:tablet', 60);
 
 		try {
-			$this->assertSame('#ff00ff', elgg_get_plugin_setting('theme:vars:test-color', 'hypetheme'));
-			$this->assertSame('60', (string) elgg_get_plugin_setting('breakpoint:tablet', 'hypetheme'));
+			$this->assertSame('#ff00ff', \elgg_get_plugin_setting('theme:vars:test-color', 'hypetheme'));
+			$this->assertSame('60', (string) \elgg_get_plugin_setting('breakpoint:tablet', 'hypetheme'));
 		} finally {
 			$plugin->unsetSetting('theme:vars:test-color');
 			$plugin->unsetSetting('breakpoint:tablet');

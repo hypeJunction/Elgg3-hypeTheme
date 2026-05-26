@@ -24,7 +24,7 @@ class PageMenu {
 
 		$menu->add(ElggMenuItem::factory([
 			'name' => 'admin:theme:assets',
-			'text' => elgg_echo('admin:theme:assets'),
+			'text' => \elgg_echo('admin:theme:assets'),
 			'href' => 'admin/theme/assets',
 			'section' => 'theme',
 			'context' => ['admin'],
@@ -32,7 +32,7 @@ class PageMenu {
 
 		$menu->add(ElggMenuItem::factory([
 			'name' => 'admin:theme:colors',
-			'text' => elgg_echo('admin:theme:colors'),
+			'text' => \elgg_echo('admin:theme:colors'),
 			'href' => 'admin/theme/colors',
 			'section' => 'theme',
 			'context' => ['admin'],
@@ -40,7 +40,7 @@ class PageMenu {
 
 		$menu->add(ElggMenuItem::factory([
 			'name' => 'admin:theme:breakpoints',
-			'text' => elgg_echo('admin:theme:breakpoints'),
+			'text' => \elgg_echo('admin:theme:breakpoints'),
 			'href' => 'admin/theme/breakpoints',
 			'section' => 'theme',
 			'context' => ['admin'],
@@ -48,7 +48,7 @@ class PageMenu {
 
 		$menu->add(ElggMenuItem::factory([
 			'name' => 'admin:theme:fonts',
-			'text' => elgg_echo('admin:theme:fonts'),
+			'text' => \elgg_echo('admin:theme:fonts'),
 			'href' => 'admin/theme/fonts',
 			'section' => 'theme',
 			'context' => ['admin'],

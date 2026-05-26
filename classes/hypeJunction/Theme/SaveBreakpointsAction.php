@@ -21,12 +21,12 @@ class SaveBreakpointsAction {
 		$tablet = $request->getParam('tablet') ?: 50;
 		$desktop = $request->getParam('desktop') ?: 80;
 
-		$plugin = elgg_get_plugin_from_id('hypetheme');
+		$plugin = \elgg_get_plugin_from_id('hypetheme');
 		$plugin->setSetting('breakpoint:tablet', $tablet);
 		$plugin->setSetting('breakpoint:desktop', $desktop);
 
-		elgg_flush_caches();
+		\elgg_flush_caches();
 
-		return elgg_ok_response('', elgg_echo('admin:theme:breakpoints:success'));
+		return \elgg_ok_response('', \elgg_echo('admin:theme:breakpoints:success'));
 	}
 }
