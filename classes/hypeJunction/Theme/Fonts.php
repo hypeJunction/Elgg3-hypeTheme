@@ -14,7 +14,7 @@ class Fonts {
 	/**
 	 * {@inheritdoc}
 	 */
-	public static function name() {
+	public static function name(): string {
 		return 'theme.fonts';
 	}
 
